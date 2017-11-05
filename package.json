@@ -1,0 +1,35 @@
+{
+  "name": "seneca-muxer-redis",
+  "version": "1.0.0",
+  "description": "redis datastore plugin for seneca muxer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node example.js",
+    "test": "./node_modules/.bin/lab -l -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-wolf/seneca-muxer-redis.git"
+  },
+  "keywords": [
+    "redis",
+    "datastore",
+    "seneca-muxer"
+  ],
+  "author": "Christian Wolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chris-wolf/seneca-muxer-redis/issues"
+  },
+  "homepage": "https://github.com/chris-wolf/seneca-muxer-redis#readme",
+  "devDependencies": {
+    "code": "^5.1.2",
+    "lab": "^15.1.2",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.1.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "redis": "^2.8.0"
+  }
+}
