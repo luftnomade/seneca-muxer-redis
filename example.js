@@ -19,7 +19,7 @@ const run = async () => {
   console.log(`getSet returned with ${getSet}`);
   const incr = await datastore.incr("some key");
   console.log(`incr returned with ${incr}`);
-  const del = await datastore.del("some key");
+  const del = await datastore.delete("some key");
   console.log(`del returned with ${del}`);
   const getAfterDelete = await datastore.get("some key");
   console.log(`get after delete returned with ${getAfterDelete}`);

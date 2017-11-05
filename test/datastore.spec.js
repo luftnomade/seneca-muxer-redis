@@ -65,7 +65,7 @@ describe("datastore", () => {
   });
 
   it("should call redis delAsync on del method", async () => {
-    const result = await datastoreStub().del("key");
+    const result = await datastoreStub().delete("key");
     expect(clientStub.delAsync.calledWith("key")).to.be.true();
   });
 });
